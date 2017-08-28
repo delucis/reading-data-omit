@@ -1,0 +1,41 @@
+{
+  "name": "@delucis/reading-data-omit",
+  "version": "0.0.1",
+  "description": "lodash.omit plugin for @delucis/reading-data.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "lodash.omit": "^4.5.0"
+  },
+  "devDependencies": {
+    "@delucis/reading-data": "^0.7.3",
+    "chai": "^4.1.1",
+    "coveralls": "^2.13.1",
+    "jsdoc": "^3.5.4",
+    "minami": "^1.2.3",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
+    "rimraf": "^2.6.1"
+  },
+  "scripts": {
+    "build:docs": "jsdoc --configure .jsdoc.json --verbose",
+    "clean:docs": "rimraf docs/",
+    "test": "nyc mocha --reporter spec",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "preversion": "npm run test",
+    "version": "npm run clean:docs && npm run build:docs && git add -A docs",
+    "postversion": "git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delucis/reading-data-omit.git"
+  },
+  "author": "Chris Swithinbank <swithinbank@gmail.com> (http://chrisswithinbank.net/)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/delucis/reading-data-omit/issues"
+  },
+  "homepage": "https://github.com/delucis/reading-data-omit#readme"
+}
