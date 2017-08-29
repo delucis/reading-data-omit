@@ -46,6 +46,6 @@ RD.run().then((res) => {
 
 name        | type               | default       | description
 ------------|--------------------|---------------|------------------------------
-`hooks`     | `String`, `Object` | `'process'`   | The `reading-data` hook that should load the YAML file. Can be scoped by passing an object with scopes as keys, hooks as values.
+`hooks`     | `String`, `Object` | `'process'`   | The `reading-data` hook that should process the scope, omitting keys. Can be scoped by passing an object with scopes as keys, hooks as values.
 `omit`      | `String`, `Array`  |               | The property/properties to be omitted from the original data.
-`scope`     | `String`, `Array`  | `'textStats'` | The scope under which `reading-data` will store this plugin’s data. Can be an array to return multiple filepaths/URLs, to multiple scopes.
+`scope`     | `String`, `Array`  | `'omit'` | The scope under which `reading-data` will store this plugin’s data.

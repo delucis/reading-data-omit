@@ -12,7 +12,7 @@ BEFORE_EACH(function () {
   READING_DATA.clean()
 })
 
-DESCRIBE('ReadingDataTextStats', function () {
+DESCRIBE('ReadingDataOmit', function () {
   IT('should be an object', function () {
     EXPECT(RDOmit).to.be.an('object')
   })
