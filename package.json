@@ -1,6 +1,6 @@
 {
   "name": "@delucis/reading-data-omit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "lodash.omit plugin for @delucis/reading-data.",
   "main": "index.js",
   "directories": {
